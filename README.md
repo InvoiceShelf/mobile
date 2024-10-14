@@ -18,24 +18,31 @@ _Please note:_ To use this app on your mobile device, you need to have the crate
 4. [Credits](#credits)
 5. [License](#license)
 
+## Prerequisite
+
+- Node.js: `14 LTS`
+- Java Development Kit (JDK): `8 (1.8.0_422)`
+
+Ensure you have the correct versions installed before starting development.
+
 ## Installation
 
 Below are the steps for starting up the crater app locally for development. If you aren't looking to customise or contribute to mobile apps then you can ignore the steps below and use the Crater [IOS & Android Apps](#mobile-app-links) directly.
 
--   Clone this repository
--   Install Expo CLI : `npm install -g expo-cli`
--   Change your current working directly in terminal to the cloned folder: `cd crater`
--   run command: `npm start`
+- Clone this repository
+- Install Expo CLI : `npm install -g expo-cli`
+- Change your current working directly in terminal to the cloned folder: `cd crater`
+- run command: `npm start`
 
 ## Web
 
--   [Repository Link](https://github.com/crater-invoice/crater)
--   [Download Link](https://craterapp.com/downloads)
+- [Repository Link](https://github.com/crater-invoice/crater)
+- [Download Link](https://craterapp.com/downloads)
 
 ## Mobile App Links
 
--   [Android](https://play.google.com/store/apps/details?id=com.craterapp.app)
--   [IOS](https://apps.apple.com/app/id1489169767)
+- [Android](https://play.google.com/store/apps/details?id=com.craterapp.app)
+- [IOS](https://apps.apple.com/app/id1489169767)
 
 ## Copyright
 
@@ -48,10 +55,10 @@ See [LICENSE](LICENSE) for details.
 
 ## Release Channels:
 
--   development
--   staging
--   production
--   production-4
+- development
+- staging
+- production
+- production-4
 
 Example: expo build:ios --release-channel staging
 

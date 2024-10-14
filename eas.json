@@ -1,0 +1,40 @@
+{
+  "cli": {
+    "version": ">= 7.3.0"
+  },
+  "build": {
+    "development": {
+      "developmentClient": true,
+      "distribution": "internal",
+      "node": "14.21.3",
+      "android": {
+        "image": "ubuntu-20.04-jdk-8-ndk-r21e",
+        "env": {
+          "PLATFORM": "android"
+        }
+      }
+    },
+    "preview": {
+      "distribution": "internal",
+      "node": "14.21.3",
+      "android": {
+        "image": "ubuntu-20.04-jdk-8-ndk-r21e",
+        "env": {
+          "PLATFORM": "android"
+        }
+      }
+    },
+    "production": {
+      "node": "14.21.3",
+      "android": {
+        "image": "ubuntu-20.04-jdk-8-ndk-r21e",
+        "env": {
+          "PLATFORM": "android"
+        }
+      }
+    }
+  },
+  "submit": {
+    "production": {}
+  }
+}

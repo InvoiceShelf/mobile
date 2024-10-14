@@ -1,6 +1,7 @@
 {
   "main": "node_modules/expo/AppEntry.js",
   "scripts": {
+    "prestart": "node scripts/check-versions.js",
     "start": "expo start",
     "android": "expo start --android",
     "ios": "expo start --ios",
@@ -8,9 +9,17 @@
     "eject": "expo eject",
     "prettier-fix": "prettier --config .prettierlc.js --write 'src/**/*.js'",
     "lints": "yarn prettier-fix",
-    "pretty": "prettier --write \"./**/*.{js,jsx,json}\""
+    "pretty": "prettier --write \"./**/*.{js,jsx,json}\"",
+    "build:android-eas": "eas build -p android",
+    "build:android-local": "eas build -p android --local",
+    "build:android-local-preview": "eas build -p android -e preview --local",
+    "build:ios-eas": "eas build -p ios",
+    "build:ios-local": "eas build -p ios --local",
+    "build:ios-local-preview": "eas build -p ios -e preview --local",
+    "build:web-local": "npx expo export -p web"
   },
   "dependencies": {
+    "@babel/core": "^7.0.0",
     "@react-native-async-storage/async-storage": "~1.15.0",
     "@react-native-community/datetimepicker": "3.5.2",
     "@react-native-community/eslint-config": "0.0.5",
@@ -22,7 +31,7 @@
     "@react-navigation/material-top-tabs": "^5.2.2",
     "@react-navigation/native": "^5.0.0-alpha.27",
     "@react-navigation/stack": "^5.0.0-alpha.58",
-    "axios": "^0.21.2",
+    "axios": "^0.19.2",
     "babel-eslint": "^10.0.3",
     "eslint-config-standard": "^14.1.0",
     "eslint-plugin-flowtype": "^4.3.0",
