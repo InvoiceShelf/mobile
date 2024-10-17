@@ -468,12 +468,12 @@
   },
   "update_app": {
     "title": "애플리케이션 버전이 만료되었습니다!",
-    "description": "이 버전의 앱은 최신 버전입니다. 크래터를 계속 사용하려면 최신 업데이트를 설치하십시오."
+    "description": "이 버전의 앱은 최신 버전입니다. Invoice Shelf를 계속 사용하려면 최신 업데이트를 설치하십시오."
   },
   "endpoint": {
     "endpoint_url": "엔드포인트 URL",
-    "endpoint_desc": "위 URL은 분화구의 자체 호스트 설치에 연결하는 데 사용됩니다.",
-    "url_placeholder": "예: https://craterapp.com",
+    "endpoint_desc": "위 URL은 셀프서비스・Invoice Shelf의 자체 호스트 설치에 연결하는 데 사용됩니다.",
+    "url_placeholder": "예: https://invoiceshelf.com",
     "alert_invalid_url": "잘못된 URL"
   },
   "estimates": {
@@ -723,7 +723,7 @@
     "character": "문자 전용",
     "numeric": "숫자여야 함",
     "more_than_due": "{{힌트}} 금액보다 많지 않아야 합니다.",
-    "url": "올바르지 않은 URL (예: https://craterapp.com)",
+    "url": "올바르지 않은 URL (예: https://invoiceshelf.com)",
     "wrong": "뭔가 잘못되었어요. 다시 한번 해 보세요.",
     "min_character": "최소 {{minCharacter}} 문자를 입력하십시오.",
     "cron": "올바른 크론 형식을 입력하십시오."

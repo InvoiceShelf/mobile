@@ -79,7 +79,7 @@ class Picker extends Component<IProps, IStates> {
       }
 
       const appName =
-        Constants?.manifest?.android?.package ?? 'com.craterapp.app';
+        Constants?.manifest?.android?.package ?? 'com.invoiceshelf.app';
 
       IntentLauncher.startActivityAsync(
         IntentLauncher.ACTION_APPLICATION_DETAILS_SETTINGS,

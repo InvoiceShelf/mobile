@@ -468,12 +468,12 @@
   },
   "update_app": {
     "title": "انتهت صلاحية نسخة التطبيق !",
-    "description": "هذه النسخة من التطبيق خارج التاريخ. برجاء تركيب أحدث تعديل للاحتفاظ به باستخدام Crater."
+    "description": "هذه النسخة من التطبيق خارج التاريخ. برجاء تركيب أحدث تعديل للاحتفاظ به باستخدام Invoice Shelf."
   },
   "endpoint": {
     "endpoint_url": "نقطة نهاية عنوان URL",
-    "endpoint_desc": "سيتم استخدام أعلى عنوان URL للاتصال مع crater الخاص بك الذي يتم استضافته ذاتيا.",
-    "url_placeholder": "Eg : https://craterapp.com",
+    "endpoint_desc": "سيتم استخدام أعلى عنوان URL للاتصال مع Invoice Shelf الخاص بك الذي يتم استضافته ذاتيا.",
+    "url_placeholder": "Eg : https://invoiceshelf.com",
     "alert_invalid_url": "عنوان URL غير صحيح"
   },
   "estimates": {
@@ -723,7 +723,7 @@
     "character": "الحروف فقط",
     "numeric": "يجب أن يكون رقمي",
     "more_than_due": "{ { تلميح } } لا يجب أن يكون أكثر من مقدار الاستحقاق.",
-    "url": "عنوان URL غير صحيح (مثال : https://craterapp.com)",
+    "url": "عنوان URL غير صحيح (مثال : https://invoiceshelf.com)",
     "wrong": "حدث شيء خاطئ. من فضلك حاول مرة أخرى",
     "min_character": "برجاء ادخال حروف { { minCharacter } } على الأقل",
     "cron": "برجاء ادخال نسق cron صحيح."

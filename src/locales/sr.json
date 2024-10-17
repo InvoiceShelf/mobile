@@ -468,12 +468,12 @@
   },
   "update_app": {
     "title": "Верзија апликације је истекла!",
-    "description": "Ова верзија апликације је застарела. Инсталирајте најновије ажурирање за коришћење Крејтера."
+    "description": "Ова верзија апликације је застарела. Инсталирајте најновије ажурирање за коришћење Invoice Shelf."
   },
   "endpoint": {
     "endpoint_url": "URL крајње тачке",
-    "endpoint_desc": "Изнад URL-а ће се користити за повезивање са вашом самохостованом инсталацијом кратера.",
-    "url_placeholder": "Нпр: https://craterapp.com",
+    "endpoint_desc": "Изнад URL-а ће се користити за повезивање са вашом самохостованом инсталацијом Invoice Shelf.",
+    "url_placeholder": "Нпр: https://invoiceshelf.com",
     "alert_invalid_url": "Неважећи URL"
   },
   "estimates": {
@@ -723,7 +723,7 @@
     "character": "Само карактери",
     "numeric": "мора бити нумерички",
     "more_than_due": "{{integt}} не би требало да буде више од Рок Амоунт.",
-    "url": "Неважећи url (нпр: https://craterapp.com)",
+    "url": "Неважећи url (нпр: https://invoiceshelf.com)",
     "wrong": "Нешто је пошло наопако. Молим вас, покушајте поново.",
     "min_character": "Унесите најмање {{mincolumer}} знакова",
     "cron": "Унесите важећу crat формат."

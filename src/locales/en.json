@@ -477,12 +477,12 @@
   },
   "update_app": {
     "title": "App Version Expired!",
-    "description": "This version of the app is out of date. Please install the latest update to keep using Crater."
+    "description": "This version of the app is out of date. Please install the latest update to keep using Invoice Shelf."
   },
   "endpoint": {
     "endpoint_url": "Endpoint URL",
-    "endpoint_desc": "Above URL will be used to connect with your self-hosted installation of crater.",
-    "url_placeholder": "Eg: https://craterapp.com",
+    "endpoint_desc": "Above URL will be used to connect with your self-hosted installation of Invoice Shelf.",
+    "url_placeholder": "Eg: https://invoiceshelf.com",
     "alert_invalid_url": "Invalid URL"
   },
   "estimates": {
@@ -735,7 +735,7 @@
     "character": "Characters Only",
     "numeric": "must be numeric",
     "more_than_due": "{{hint}} Should not be more than Due Amount.",
-    "url": "Invalid url (eg: https://craterapp.com)",
+    "url": "Invalid url (eg: https://invoiceshelf.com)",
     "wrong": "Something went wrong. Please, try again.",
     "min_character": "Please enter at least {{minCharacter}} characters",
     "cron": "Please enter a valid cron format."

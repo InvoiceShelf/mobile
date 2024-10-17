@@ -468,12 +468,12 @@
   },
   "update_app": {
     "title": "Appversion är utökad!",
-    "description": "Den här versionen av appen är inte aktuell. Installera den senaste uppdateringen för att fortsätta att använda Crater."
+    "description": "Den här versionen av appen är inte aktuell. Installera den senaste uppdateringen för att fortsätta att använda Invoice Shelf."
   },
   "endpoint": {
     "endpoint_url": "Slutpunkt-URL",
-    "endpoint_desc": "Ovanför URL-adressen används för att ansluta till din självinstallerade installation av kratern.",
-    "url_placeholder": "Eg: https://craterapp.com",
+    "endpoint_desc": "Ovanför URL-adressen används för att ansluta till din självinstallerade installation av Invoice Shelf.",
+    "url_placeholder": "Eg: https://invoiceshelf.com",
     "alert_invalid_url": "Ogiltig URL"
   },
   "estimates": {
@@ -723,7 +723,7 @@
     "character": "Endast tecken",
     "numeric": "måste vara numeriskt",
     "more_than_due": "{ { tips } } bör inte vara mer än förfallobelopp.",
-    "url": "Ogiltig URL (exempel: https://craterapp.com)",
+    "url": "Ogiltig URL (exempel: https://invoiceshelf.com)",
     "wrong": "Något gick fel. Snälla, försök igen.",
     "min_character": "Ange minst { { minCharacter } } tecken",
     "cron": "Ange ett giltigt cron-format."

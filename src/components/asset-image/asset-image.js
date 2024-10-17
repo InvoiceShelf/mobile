@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {Image} from 'react-native';
-import LogoDark from '../../assets/crater-logo.png';
-import LogoWhite from '../../assets/crater-logo-white.png';
+import LogoDark from '../../assets/invoiceshelf-logo.png';
+import LogoWhite from '../../assets/invoiceshelf-logo-white.png';
 import GoogleIcon from '../../assets/google.png';
 import EmptyInvoices from '../../assets/empty-invoices-icon.png';
 import EmptyCustomers from '../../assets/empty-customers-icon.png';

@@ -468,12 +468,12 @@
   },
   "update_app": {
     "title": "App-versie vervallen!",
-    "description": "Deze versie van de app is verouderd. Installeer de laatste update voor het gebruik van Crater."
+    "description": "Deze versie van de app is verouderd. Installeer de laatste update voor het gebruik van Invoice Shelf."
   },
   "endpoint": {
     "endpoint_url": "URL van eindpunt",
-    "endpoint_desc": "De bovenstaande URL wordt gebruikt om verbinding te maken met uw zelfgehoste installatie van krater.",
-    "url_placeholder": "Bijvoorbeeld: https://craterapp.com",
+    "endpoint_desc": "De bovenstaande URL wordt gebruikt om verbinding te maken met uw zelfgehoste installatie van Invoice Shelf.",
+    "url_placeholder": "Bijvoorbeeld: https://invoiceshelf.com",
     "alert_invalid_url": "Ongeldige URL"
   },
   "estimates": {
@@ -723,7 +723,7 @@
     "character": "Alleen tekens",
     "numeric": "moet numeriek zijn",
     "more_than_due": "{ { hint } } mag niet hoger zijn dan het verschuldigde bedrag.",
-    "url": "Ongeldige URL (bijvoorbeeld: https://craterapp.com)",
+    "url": "Ongeldige URL (bijvoorbeeld: https://invoiceshelf.com)",
     "wrong": "Er is iets misgegaan. Probeer het opnieuw.",
     "min_character": "Geef ten minste { { minCharacter } } tekens op",
     "cron": "Geef een geldige cron-indeling op."

@@ -468,12 +468,12 @@
   },
   "update_app": {
     "title": "アプリケーション・バージョンが有効期限切れです !",
-    "description": "このバージョンのアプリケーションは古くなっています。 Craterを使用するには、最新の更新をインストールしてください。"
+    "description": "このバージョンのアプリケーションは古くなっています。 Invoice Shelfを使用するには、最新の更新をインストールしてください。"
   },
   "endpoint": {
     "endpoint_url": "エンドポイント URL",
-    "endpoint_desc": "Above URL は、セルフサービス・クレーターのセルフ・ホスト・インストールとの接続に使用されます。",
-    "url_placeholder": "Eg: https://craterapp.com",
+    "endpoint_desc": "上記のURLは、セルフサービス・Invoice Shelfのセルフ・ホスト・インストールとの接続に使用されます。",
+    "url_placeholder": "Eg: https://invoiceshelf.com",
     "alert_invalid_url": "無効な URL"
   },
   "estimates": {
@@ -723,7 +723,7 @@
     "character": "文字のみ",
     "numeric": "は数値である必要",
     "more_than_due": "{{hint}} 期限切れの金額を超えてはなりません。",
-    "url": "無効な URL (例 : https://craterapp.com)",
+    "url": "無効な URL (例 : https://invoiceshelf.com)",
     "wrong": "何かがおかしい もう一度やり直してください。",
     "min_character": "少なくとも {{minCharacter}} 文字を入力してください",
     "cron": "有効な cron 形式を入力してください。"

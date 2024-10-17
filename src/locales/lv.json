@@ -468,12 +468,12 @@
   },
   "update_app": {
     "title": "App Versija Beidzies!",
-    "description": "Šī lietotnes versija ir novecovai. Lūdzu, instalējiet jaunāko atjauninājumu, lai saglabātu Crater lietošanu."
+    "description": "Šī lietotnes versija ir novecovai. Lūdzu, instalējiet jaunāko atjauninājumu, lai saglabātu Invoice Shelf lietošanu."
   },
   "endpoint": {
     "endpoint_url": "Parametra URL",
-    "endpoint_desc": "Virs URL tiks izmantots, lai izveidotu savienojumu ar savu pašuzņēmīgo uzstādīšanu krāteris.",
-    "url_placeholder": "Eg: https://craterapp.com",
+    "endpoint_desc": "Virs URL tiks izmantots, lai izveidotu savienojumu ar savu pašuzņēmīgo uzstādīšanu Invoice Shelf.",
+    "url_placeholder": "Eg: https://invoiceshelf.com",
     "alert_invalid_url": "Nederīgs URL"
   },
   "estimates": {
@@ -723,7 +723,7 @@
     "character": "Tikai rakstzīmes",
     "numeric": "ir jābūt skaitliskai",
     "more_than_due": "{{hint}} nevajadzētu būt vairāk par pienācīgu summu.",
-    "url": "Nederīgs url (piemēram: https://craterapp.com)",
+    "url": "Nederīgs url (piemēram: https://invoiceshelf.com)",
     "wrong": "Kaut kas notika nepareizi. Lūdzu, mēģiniet vēlreiz.",
     "min_character": "Lūdzu, ievadiet vismaz {{minCharacter}} rakstzīmes",
     "cron": "Lūdzu ievadiet derīgu cron formātu."

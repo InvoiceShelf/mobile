@@ -36,7 +36,8 @@ export default class UpdateAppVersion extends Component<IProps, IStates> {
 
     const url = {
       ios: 'http://itunes.apple.com/app/id1489169767',
-      android: 'https://play.google.com/store/apps/details?id=com.craterapp.app'
+      android:
+        'https://play.google.com/store/apps/details?id=com.invoiceshelf.app'
     };
 
     isAndroidPlatform ? Linking.openURL(url.android) : Linking.openURL(url.ios);

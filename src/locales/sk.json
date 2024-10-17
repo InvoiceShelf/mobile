@@ -441,12 +441,12 @@
   },
   "updateApp": {
     "title": "Vypršala platnosť aplikácie",
-    "description": "Táto verzia aplikácie je zastaraná. Ak chcete ďalej používať Crater, nainštalujte si najnovšiu aktualizáciu. "
+    "description": "Táto verzia aplikácie je zastaraná. Ak chcete ďalej používať Invoice Shelf, nainštalujte si najnovšiu aktualizáciu. "
   },
   "endpoint": {
     "endpointURL": "URL Adresa serveru",
-    "endpointDesc": "Vyššie uvedená adresa URL sa použije na spojenie s vašim serverom Crater",
-    "urlPlaceHolder": "Eg: https://craterapp.com",
+    "endpointDesc": "Vyššie uvedená adresa URL sa použije na spojenie s vašim serverom Invoice Shelf",
+    "urlPlaceHolder": "Eg: https://invoiceshelf.com",
     "alertInvalidUrl": "Neplatná adresa"
   },
   "estimates": {
@@ -747,7 +747,7 @@
     "character": "Iba znaky",
     "numeric": "musí byť číslo",
     "moreThanDue": "{{hint}} Nemalo by byť vačšia ako suma.",
-    "url": "Nesprávna adresa (eg: https://craterapp.com)",
+    "url": "Nesprávna adresa (eg: https://invoiceshelf.com)",
     "wrong": "Niečo neprebehlo v poriadku, odskúšajte prosím znova.",
     "alreadyTaken": "Už sa používa",
     "minCharacter": "Prosím použite minimálne {{minCharacter}} znakov"

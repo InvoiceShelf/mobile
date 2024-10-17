@@ -468,12 +468,12 @@
   },
   "update_app": {
     "title": "Phiên Bản Ứng Dụng Đã Hết Hạn!",
-    "description": "Phiên bản này của ứng dụng không được ngày. Hãy cài đặt bản cập nhật mới nhất để tiếp tục sử dụng Crater."
+    "description": "Phiên bản này của ứng dụng không được ngày. Hãy cài đặt bản cập nhật mới nhất để tiếp tục sử dụng Invoice Shelf."
   },
   "endpoint": {
     "endpoint_url": "URL điểm cuối",
-    "endpoint_desc": "Trên URL sẽ được dùng để kết nối với cài đặt miệng núi lửa tự chủ trì.",
-    "url_placeholder": "Eg: https://craterapp.com",
+    "endpoint_desc": "Trên URL sẽ được dùng để kết nối với cài đặt Invoice Shelf tự chủ trì.",
+    "url_placeholder": "Eg: https://invoiceshelf.com",
     "alert_invalid_url": "Địa chỉ Mạng"
   },
   "estimates": {
@@ -723,7 +723,7 @@
     "character": "Chỉ ký tự",
     "numeric": "phải là sô ́",
     "more_than_due": "{{gợi}} không được nhiều hơn So với Amount.",
-    "url": "Url không hợp lệ (eg: https://craterapp.com)",
+    "url": "Url không hợp lệ (eg: https://invoiceshelf.com)",
     "wrong": "Có gì đó không ổn. Làm ơn, hãy thử lại.",
     "min_character": "Vui lòng nhập tối thiểu {{minCharacter}} ký tự",
     "cron": "Vui lòng nhập định dạng cOn hợp lệ."
