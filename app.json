@@ -17,6 +17,7 @@
       "backgroundColor": "#F9FBFF"
     },
     "updates": {
+      "enabled": true,
       "fallbackToCacheTimeout": 0
     },
     "assetBundlePatterns": [
@@ -27,6 +28,7 @@
       "supportsTablet": true,
       "bundleIdentifier": "com.craterapp.app",
       "buildNumber": "24",
+      "deploymentTarget": "12.0",
       "usesIcloudStorage": true,
       "infoPlist": {
         "NSFaceIDUsageDescription": "This app will optionally use Face ID or Touch ID to save login"
