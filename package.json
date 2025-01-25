@@ -16,7 +16,8 @@
     "build:ios-eas": "eas build -p ios",
     "build:ios-local": "eas build -p ios --local",
     "build:ios-local-preview": "eas build -p ios -e preview --local",
-    "build:web-local": "npx expo export -p web"
+    "build:web-local": "npx expo export -p web",
+    "postinstall": "patch-package"
   },
   "dependencies": {
     "@babel/core": "^7.0.0",
@@ -88,6 +89,7 @@
     "eslint": "6.3.0",
     "eslint-config-prettier": "6.3.0",
     "eslint-plugin-prettier": "3.1.0",
+    "patch-package": "^8.0.0",
     "prettier": "1.18.2"
   },
   "private": true
