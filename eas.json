@@ -6,7 +6,7 @@
     "development": {
       "developmentClient": true,
       "distribution": "internal",
-      "node": "14.21.3",
+      "node": "14.18.1",
       "android": {
         "image": "ubuntu-20.04-jdk-8-ndk-r21e",
         "env": {
@@ -16,7 +16,7 @@
     },
     "preview": {
       "distribution": "internal",
-      "node": "14.21.3",
+      "node": "14.18.1",
       "android": {
         "image": "ubuntu-20.04-jdk-8-ndk-r21e",
         "env": {
@@ -25,7 +25,7 @@
       }
     },
     "production": {
-      "node": "14.21.3",
+      "node": "14.18.1",
       "android": {
         "image": "ubuntu-20.04-jdk-8-ndk-r21e",
         "env": {
