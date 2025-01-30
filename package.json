@@ -15,7 +15,8 @@
     "build:ios-eas": "eas build -p ios",
     "build:ios-local": "eas build -p ios --local",
     "build:ios-local-preview": "eas build -p ios -e preview --local",
-    "build:web-local": "npx expo export -p web"
+    "build:web-local": "npx expo export -p web",
+    "postinstall": "patch-package"
   },
   "dependencies": {
     "@babel/core": "^7.0.0",
@@ -46,12 +47,15 @@
     "expo-linking": "~2.3.1",
     "expo-local-authentication": "~11.1.1",
     "expo-localization": "~10.2.0",
+    "expo-splash-screen": "~0.11.2",
+    "expo-status-bar": "~1.0.4",
     "expo-store-review": "~4.1.0",
     "expo-updates": "~0.8.1",
     "htmlparser2": "^4.1.0",
     "i18n-js": "^3.3.0",
     "lodash": "^4.17.21",
     "moment": "^2.26.0",
+    "patch-package": "^8.0.0",
     "query-string": "^6.8.3",
     "react": "16.13.1",
     "react-dom": "16.13.1",
@@ -69,6 +73,7 @@
     "react-native-safe-area-context": "3.2.0",
     "react-native-screens": "~3.4.0",
     "react-native-svg": "12.1.1",
+    "react-native-unimodules": "0.14.10",
     "react-native-vector-icons": "^6.6.0",
     "react-native-web": "~0.13.12",
     "react-native-webview": "11.6.2",
@@ -80,18 +85,15 @@
     "redux-storage": "^4.1.2",
     "reselect": "^4.0.0",
     "styled-components": "^5.0.0",
-    "styled-tools": "^1.7.2",
-    "expo-splash-screen": "~0.11.2",
-    "expo-status-bar": "~1.0.4",
-    "react-native-unimodules": "0.14.10"
+    "styled-tools": "^1.7.2"
   },
   "devDependencies": {
+    "@babel/core": "^7.9.0",
     "babel-preset-expo": "8.3.0",
     "eslint": "6.3.0",
     "eslint-config-prettier": "6.3.0",
     "eslint-plugin-prettier": "3.1.0",
-    "prettier": "1.18.2",
-    "@babel/core": "^7.9.0"
+    "prettier": "1.18.2"
   },
   "private": true,
   "name": "invoiceShelf-mobile",
