@@ -1,0 +1,98 @@
+diff --git a/node_modules/expo-image-picker/README.md b/node_modules/expo-image-picker/README.md
+index 5d61125..5454f47 100644
+--- a/node_modules/expo-image-picker/README.md
++++ b/node_modules/expo-image-picker/README.md
+@@ -51,7 +51,7 @@ In `AndroidManifest.xml` add the following `activity` within `application`:
+ 
+ ```xml
+ <activity
+-  android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
++  android:name="com.canhub.cropper.CropImageActivity"
+   android:theme="@style/Base.Theme.AppCompat">
+ </activity>
+ ```
+diff --git a/node_modules/expo-image-picker/android/build.gradle b/node_modules/expo-image-picker/android/build.gradle
+index 806783d..c2df78a 100644
+--- a/node_modules/expo-image-picker/android/build.gradle
++++ b/node_modules/expo-image-picker/android/build.gradle
+@@ -81,7 +81,8 @@ dependencies {
+   unimodule 'expo-modules-core'
+ 
+   implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:${safeExtGet('kotlinVersion', '1.4.21')}"
+-  api 'com.theartofdev.edmodo:android-image-cropper:2.8.0'
++  implementation 'com.github.CanHub:Android-Image-Cropper:2.0.0'
++  implementation 'androidx.exifinterface:exifinterface:1.3.3'
+   api "androidx.legacy:legacy-support-v4:1.0.0"
+   api 'commons-codec:commons-codec:1.10'
+   api 'commons-io:commons-io:2.6'
+diff --git a/node_modules/expo-image-picker/android/src/main/AndroidManifest.xml b/node_modules/expo-image-picker/android/src/main/AndroidManifest.xml
+index aa1820c..794d6e1 100644
+--- a/node_modules/expo-image-picker/android/src/main/AndroidManifest.xml
++++ b/node_modules/expo-image-picker/android/src/main/AndroidManifest.xml
+@@ -10,7 +10,7 @@
+ 
+     <application>
+       <activity
+-        android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
++        android:name="com.canhub.cropper.CropImageActivity"
+         android:theme="@style/Base.Theme.AppCompat"/>
+       <!-- https://developer.android.com/guide/topics/manifest/provider-element.html -->
+         <provider
+diff --git a/node_modules/expo-image-picker/android/src/main/java/expo/modules/imagepicker/ImagePickerModule.kt b/node_modules/expo-image-picker/android/src/main/java/expo/modules/imagepicker/ImagePickerModule.kt
+index e8a838a..d336be4 100644
+--- a/node_modules/expo-image-picker/android/src/main/java/expo/modules/imagepicker/ImagePickerModule.kt
++++ b/node_modules/expo-image-picker/android/src/main/java/expo/modules/imagepicker/ImagePickerModule.kt
+@@ -10,7 +10,7 @@ import android.net.Uri
+ import android.os.Bundle
+ import android.provider.MediaStore
+ import android.util.Log
+-import com.theartofdev.edmodo.cropper.CropImage
++import com.canhub.cropper.CropImage
+ import expo.modules.imagepicker.ImagePickerOptions.Companion.optionsFromMap
+ import expo.modules.imagepicker.exporters.CompressionImageExporter
+ import expo.modules.imagepicker.exporters.CropImageExporter
+@@ -338,7 +338,7 @@ class ImagePickerModule(
+ 
+     if (requestCode == CropImage.CROP_IMAGE_ACTIVITY_REQUEST_CODE) {
+       val result = CropImage.getActivityResult(intent)
+-      val exporter = CropImageExporter(result.rotation, result.cropRect, pickerOptions.isBase64)
++      val exporter = CropImageExporter(result!!.rotation, result!!.cropRect, pickerOptions?.isBase64)
+       ImageResultTask(promise, result.uri, contentResolver, CropFileProvider(result.uri), pickerOptions.isExif, exporter).execute()
+       return
+     }
+diff --git a/node_modules/expo-image-picker/plugin/build/withImagePicker.js b/node_modules/expo-image-picker/plugin/build/withImagePicker.js
+index 7d61068..14c6d23 100644
+--- a/node_modules/expo-image-picker/plugin/build/withImagePicker.js
++++ b/node_modules/expo-image-picker/plugin/build/withImagePicker.js
+@@ -11,10 +11,10 @@ function setImagePickerManifestActivity(androidManifest) {
+     if (!app.activity) {
+         app.activity = [];
+     }
+-    if (!app.activity.find(({ $ }) => $['android:name'] === 'com.theartofdev.edmodo.cropper.CropImageActivity')) {
++    if (!app.activity.find(({ $ }) => $['android:name'] === 'com.canhub.cropper.CropImageActivity')) {
+         app.activity.push({
+             $: {
+-                'android:name': 'com.theartofdev.edmodo.cropper.CropImageActivity',
++                'android:name': 'com.canhub.cropper.CropImageActivity',
+                 'android:theme': '@style/Base.Theme.AppCompat',
+             },
+         });
+diff --git a/node_modules/expo-image-picker/plugin/src/withImagePicker.ts b/node_modules/expo-image-picker/plugin/src/withImagePicker.ts
+index 9d759f8..fe8145c 100644
+--- a/node_modules/expo-image-picker/plugin/src/withImagePicker.ts
++++ b/node_modules/expo-image-picker/plugin/src/withImagePicker.ts
+@@ -21,12 +21,12 @@ export function setImagePickerManifestActivity(
+   }
+   if (
+     !app.activity.find(
+-      ({ $ }) => $['android:name'] === 'com.theartofdev.edmodo.cropper.CropImageActivity'
++      ({ $ }) => $['android:name'] === 'com.canhub.cropper.CropImageActivity'
+     )
+   ) {
+     app.activity.push({
+       $: {
+-        'android:name': 'com.theartofdev.edmodo.cropper.CropImageActivity',
++        'android:name': 'com.canhub.cropper.CropImageActivity',
+         'android:theme': '@style/Base.Theme.AppCompat',
+       },
+     });
